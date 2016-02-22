@@ -1,5 +1,6 @@
 import os
 import time
+import civis
 print("first print")
 time.sleep(5)
 print("after 5")
