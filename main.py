@@ -9,13 +9,13 @@ file_id = file_to_civis("this file is so cool yay", file_name)
 job_id = os.environ.get('CIVIS_JOB_ID')
 run_id = os.environ.get('CIVIS_RUN_ID')
 # create file output
-client.scripts.post_python3_runs_outputs(job_id, run_id, 'File', file_id)
+client.scripts.post_containers_runs_outputs(job_id, run_id, 'File', file_id)
 # create table output
 table_id = 2127734
-client.scripts.post_python3_runs_outputs(job_id, run_id, 'Table', table_id)
+client.scripts.post_containers_runs_outputs(job_id, run_id, 'Table', table_id)
 # create report output
 report_id = 26876
-client.scripts.post_python3_runs_outputs(job_id, run_id, 'Report', report_id)
+client.scripts.post_containers_runs_outputs(job_id, run_id, 'Report', report_id)
 
 
 
